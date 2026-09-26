@@ -241,7 +241,7 @@ export const experience: Role[] = [
     summary: 'Warehousing, BI and forecasting on a high-volume transactional credit platform.',
     highlights: [
       'Improved query performance by 35% on SQL Server and Azure Synapse.',
-      'Sped up data refresh cycles by 40% by managing Azure Data Factory and Databricks pipelines.',
+      'Accelerated data refresh cycles 40% by managing Azure Data Factory and Databricks pipelines.',
       'Delivered 25% faster insight generation with DAX-driven Power BI models.',
       'Forecast payment behavior with scikit-learn regression, and cut release errors by 30% with CI/CD.',
     ],

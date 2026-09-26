@@ -87,9 +87,14 @@ export const ExperienceSection: React.FC = () => {
               >
                 {/* Desktop Year (Left side of track) */}
                 <div className="hidden md:block w-[140px] shrink-0 pr-8 pt-0.5 text-right">
-                  <span className="text-[10px] font-mono tracking-[0.2em] text-[#8C6D4F] group-hover:text-[#D4AF37] transition-colors">
-                    {stop.period}
-                  </span>
+                     <span className="block text-[10px] font-mono tracking-[0.2em] leading-[1.9] text-[#8C6D4F] group-hover:text-[#D4AF37] transition-colors whitespace-nowrap">
+                       {                  stop.period.split(' – ').map((part, i) => (
+       <span key={part} className="block">
+         {part}
+         {i === 0 ? ' –' : ''}
+       </span>
+     ))}
+   </span>
                 </div>
 
                 {/* Route Node */}

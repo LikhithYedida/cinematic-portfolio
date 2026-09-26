@@ -70,7 +70,7 @@ export const AboutSection: React.FC = () => {
   return (
     <section 
       id="about" 
-      className="relative w-screen min-h-screen bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-hidden flex items-center"
+      className="relative w-full bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black pt-16 pb-20 lg:pt-20 lg:pb-24 px-6 sm:px-12 lg:px-20 overflow-hidden"
     >
       {/* ================= BACKGROUND GLOWS & FLOATING PARTICLES ================= */}
       <motion.div 
