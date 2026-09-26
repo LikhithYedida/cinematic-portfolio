@@ -28,12 +28,10 @@ Change text, numbers or links there and the whole site updates. You don't need t
 | Favicon | `public/favicon.svg` |
 | Hero data animation | `src/components/DataFieldCanvas.tsx` |
 
-## Deploy (free)
-
-**Vercel:** push this folder to a new GitHub repo, import it at vercel.com, and keep the defaults (framework: Vite, build: `npm run build`, output: `dist`).
-
-**Netlify:** same idea. Build command `npm run build`, publish directory `dist`.
+## Deployed
 
 ## Contact form
 
 The form has no backend. It opens the visitor's email app with the message pre-filled to the address in `profile.ts`.
+
+## Author : Likhith Yedida
