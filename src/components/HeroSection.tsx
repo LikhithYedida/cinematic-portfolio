@@ -169,7 +169,7 @@ export const HeroSection: React.FC = () => {
                   <span className="absolute inline-flex w-full h-full rounded-full bg-[#D4AF37] opacity-70 animate-ping" />
                   <span className="relative inline-flex w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
                 </span>
-                Open to data analyst roles
+                Open to data analyst & analytics engineering roles
               </span>
             </motion.div>
 

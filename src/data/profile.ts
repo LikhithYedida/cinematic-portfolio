@@ -204,7 +204,7 @@ export interface Role {
 export const experience: Role[] = [
   {
     id: '01',
-    period: 'FEB 2026 – PRESENT',
+    period: 'FEB 2026 – SEP 2026',
     title: 'PERSONAL INJURY DATA ANALYST',
     organization: 'POSTMAN LAW',
     location: 'Remote',
