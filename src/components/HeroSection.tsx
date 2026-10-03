@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { DataFieldCanvas } from './DataFieldCanvas';
-import { profile, heroCopy, heroKpis, experience } from '../data/profile';
+import { profile, heroCopy, heroKpis, heroDomains } from '../data/profile';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -95,7 +95,7 @@ const KpiRow: React.FC<{ value: number; suffix: string; label: string; delay: nu
 };
 
 export const HeroSection: React.FC = () => {
-  const companies = experience.map((r) => r.organization);
+  const companies = heroDomains;
 
   return (
     <section className="relative w-full min-h-screen md:h-screen overflow-hidden bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black">
@@ -308,7 +308,7 @@ export const HeroSection: React.FC = () => {
           className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 pointer-events-auto"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
-          <span className="text-[9.5px] tracking-[0.3em] uppercase text-[#8C6D4F] shrink-0">Experience at</span>
+          <span className="text-[9.5px] tracking-[0.3em] uppercase text-[#8C6D4F] shrink-0">Work across</span>
           <div className="hidden sm:block w-10 h-[1px] bg-[#8C6D4F]/50" />
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-[10.5px] tracking-[0.26em] uppercase text-[#C4B5A5]">
             {companies.map((c) => (

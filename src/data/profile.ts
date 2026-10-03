@@ -18,26 +18,29 @@ export const profile = {
 export const heroCopy = {
   headline: ['I TURN DATA', 'INTO', 'DECISIONS'],
   intro:
-    '5+ years turning raw, messy data into dashboards leadership trusts, across finance, legal and hospitality.',
-  introLine2: 'SQL, Power BI and Python, built for the people who make the call.',
+    'Data analyst building the SQL, pipelines and dashboards leadership trusts, from case analytics at a personal injury firm to six end-to-end builds on real-world data.',
+  introLine2: 'SQL, Python and BI, built for the people who make the call.',
 };
+
+// Domains shown under the hero
+export const heroDomains = ['LEGAL', 'HEALTHCARE', 'BANKING', 'VEHICLE SAFETY', 'EMERGENCY RESPONSE', 'LABOR MARKETS'];
 
 // Executive KPI panel in the hero
 export const heroKpis = [
-  { value: 5, suffix: '+', label: 'Years in analytics' },
-  { value: 32, suffix: '+', label: 'Power BI dashboards shipped' },
-  { value: 40, suffix: '%', label: 'Faster data refresh cycles' },
+  { value: 22, suffix: '', label: 'Leadership dashboards shipped' },
+  { value: 15, suffix: '+', label: 'Case reports built in Sigma' },
+  { value: 3, suffix: 'K+', label: 'Bad records flagged' },
 ];
 
 export const about = {
   headline: ["I DON'T JUST BUILD DASHBOARDS.", 'I BUILD TRUST IN THE NUMBERS.'],
   bio:
-    "a data analyst with 5+ years across financial, legal and hospitality data, from portfolio reporting at Citi and Synchrony to case analytics at a personal injury law firm. I build the SQL, pipelines and Power BI / Tableau layers that leadership relies on, and I obsess over data quality so the numbers hold up in the room.",
+    "a data analyst who builds the SQL, pipelines and dashboards that leadership relies on. Most recently I ran case analytics at a personal injury law firm, and I've shipped six end-to-end analytics projects across legal, healthcare, banking, vehicle safety, emergency response and labor data. I obsess over data quality so the numbers hold up in the room.",
   stats: [
-    { value: '5+', label: 'Years in Analytics', gold: false },
-    { value: '32+', label: 'Dashboards Shipped', gold: true },
-    { value: '40%', label: 'Faster Refresh Cycles', gold: false },
-    { value: '3K+', label: 'Bad Records Caught', gold: true },
+    { value: '22', label: 'Dashboards Shipped', gold: false },
+    { value: '15+', label: 'Case Reports Built', gold: true },
+    { value: '3K+', label: 'Bad Records Caught', gold: false },
+    { value: '6', label: 'End-to-End Projects', gold: true },
   ],
   education: [
     { degree: 'M.S. Computer Science', school: 'University of New Haven' },
@@ -65,6 +68,21 @@ export interface Project {
 export const projects: Project[] = [
   {
     number: '01',
+    title: 'PI Case Intake Forecasting & Growth Analytics',
+    category: 'LEGAL OPERATIONS / DEMAND FORECASTING',
+    description:
+      'Can a law firm predict when and where case demand will rise, and plan around it? Models a simulated 12-office personal injury firm on public crash (FARS), weather and population data, connecting market demand, intake forecasts, staffing capacity, marketing economics and office performance. The data overturned my own assumption: Michigan and Ohio auto cases peak in summer, not winter. Validation checks and documented limitations are built into the pipeline.',
+    liveUrl: 'https://lookerstudio.google.com/reporting/d4b3d152-2c36-40db-87b3-82bee2833d20/page/gaLAG',
+    githubUrl: 'https://github.com/LikhithYedida/pi-intake-forecast',
+    tech: ['Python', 'SQL', 'BigQuery', 'Looker Studio', 'pandas', 'statsmodels'],
+    metrics: [
+      { label: 'OFFICES MODELED', value: '12 (simulated firm)' },
+      { label: 'PUBLIC DATA', value: 'FARS · weather · population' },
+      { label: 'KEY FINDING', value: 'Summer peak, not winter' },
+    ],
+  },
+  {
+    number: '02',
     title: 'AI Occupational Displacement Tracker',
     category: 'LABOR ECONOMICS / STATISTICAL MODELING',
     description:
@@ -79,7 +97,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: '02',
+    number: '03',
     title: 'AutoPulse',
     category: 'VEHICLE SAFETY / RISK INTELLIGENCE',
     description:
@@ -94,7 +112,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: '03',
+    number: '04',
     title: 'CrisisOps',
     category: 'EMERGENCY MANAGEMENT / LIVE HAZARD ANALYTICS',
     description:
@@ -108,11 +126,11 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: '04',
+    number: '05',
     title: 'Healthcare Analytics Command Center',
     category: 'HEALTHCARE / CLOUD DATA ENGINEERING',
     description:
-      'An end-to-end Azure lakehouse. Data Factory ingests synthetic Synthea records into a Bronze → Silver → Gold Databricks pipeline with built-in data-quality checks, which feeds a six-page Tableau command center covering utilization, claims, readmissions and provider performance. Built on the same ADF and Databricks stack I ran at Citi.',
+      'An end-to-end Azure lakehouse. Data Factory ingests synthetic Synthea records into a Bronze → Silver → Gold Databricks pipeline with built-in data-quality checks, which feeds a six-page Tableau command center covering utilization, claims, readmissions and provider performance.',
     githubUrl: 'https://github.com/LikhithYedida/healthcare-analytics-platform',
     tech: ['Azure Data Factory', 'ADLS Gen2', 'Databricks', 'PySpark', 'Delta Lake', 'Databricks SQL', 'Tableau'],
     metrics: [
@@ -122,11 +140,11 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: '05',
+    number: '06',
     title: 'Consumer Complaint Risk & Response Intelligence',
     category: 'BANKING / RISK & COMPLIANCE ANALYTICS',
     description:
-      'Python ingestion loads CFPB consumer complaints into PostgreSQL, and dbt models them into governed risk marts with reconciliation tests. NLP surfaces complaint themes and sentiment, and everything rolls up into a four-page Power BI risk report with a company risk score. Built from the portfolio-risk lens I used at Synchrony and Citi.',
+      'Python ingestion loads CFPB consumer complaints into PostgreSQL, and dbt models them into governed risk marts with reconciliation tests. NLP surfaces complaint themes and sentiment, and everything rolls up into a four-page Power BI risk report with a company risk score.',
     githubUrl: 'https://github.com/LikhithYedida/banking-risk-intelligence',
     tech: ['Python', 'PostgreSQL', 'dbt', 'scikit-learn', 'VADER NLP', 'Power BI', 'DAX'],
     metrics: [
@@ -144,15 +162,15 @@ export const skillBlocks = [
     items: ['Power BI', 'DAX', 'Power Query', 'Tableau', 'Sigma Computing', 'Amazon QuickSight', 'Looker Studio', 'Google Data Studio'],
     description:
       'Executive dashboards with governed data models, KPI design, drill-downs and automated refreshes that leadership opens every morning.',
-    stat: '32+ DASHBOARDS',
+    stat: '22 DASHBOARDS',
     colSpan: 'lg:col-span-7',
   },
   {
     title: 'SQL & DATA WAREHOUSING',
     badge: 'FOUNDATION',
     items: ['SQL', 'SQL Server', 'PostgreSQL', 'Oracle', 'Amazon Redshift', 'Redshift Spectrum', 'Athena', 'BigQuery', 'Azure Synapse', 'Databricks SQL'],
-    description: 'Stored procedures, dimensional models and query tuning on high-volume transactional platforms.',
-    stat: '35% FASTER QUERIES',
+    description: 'Reporting queries, dimensional models and dbt marts with validation built into every layer.',
+    stat: '15+ CASE REPORTS',
     colSpan: 'lg:col-span-5',
   },
   {
@@ -160,16 +178,16 @@ export const skillBlocks = [
     badge: 'PIPELINES',
     items: ['Azure Data Factory', 'Azure Databricks', 'PySpark', 'Delta Lake', 'dbt', 'AWS Glue', 'AWS Lambda', 'S3', 'GCP Dataflow', 'Cloud Run', 'Talend', 'ETL / ELT'],
     description: 'Ingestion and medallion pipelines across Azure, AWS and GCP that keep reporting fresh and reliable.',
-    stat: '40% FASTER REFRESH',
+    stat: 'AZURE · GCP',
     colSpan: 'lg:col-span-5',
   },
   {
     title: 'PYTHON & STATISTICS',
     badge: 'INTELLIGENCE',
-    items: ['Python', 'pandas', 'NumPy', 'scikit-learn', 'statsmodels', 'SciPy', 'PySpark', 'R', 'Regression', 'Forecasting', 'Segmentation', 'Churn Analysis', 'Anomaly Detection', 'NLP'],
+    items: ['Python', 'pandas', 'NumPy', 'scikit-learn', 'statsmodels', 'SciPy', 'PySpark', 'R', 'Regression', 'Time-Series Forecasting', 'Segmentation', 'Churn Analysis', 'Anomaly Detection', 'NLP'],
     description:
-      'From regression forecasts of payment behavior to stepwise models that stress-test a headline claim before it reaches a slide.',
-    stat: '35% LESS MANUAL QA',
+      'From demand forecasting and NLP to stepwise models that stress-test an assumption before it reaches a slide.',
+    stat: '861 OCCUPATIONS MODELED',
     colSpan: 'lg:col-span-7',
   },
   {
@@ -177,7 +195,7 @@ export const skillBlocks = [
     badge: 'TRUST LAYER',
     items: ['Data Profiling', 'Validation', 'Reconciliation', 'Data Governance', 'Metadata Management', 'PyTest'],
     description: 'Automated checks that catch duplicates, nulls and broken joins before a stakeholder ever sees them.',
-    stat: '3K+ RECORDS FIXED',
+    stat: '3K+ RECORDS FLAGGED',
     colSpan: 'lg:col-span-6',
   },
   {
@@ -185,7 +203,7 @@ export const skillBlocks = [
     badge: 'EXECUTION',
     items: ['Excel', 'PivotTables', 'Salesforce (Litify)', 'Streamlit', 'FastAPI', 'Plotly', 'Git', 'Jenkins', 'CI/CD', 'Jira', 'Confluence'],
     description: 'Shipping analytics like software: version control, CI/CD, sprint tracking and documentation people use.',
-    stat: '30% FEWER RELEASE ERRORS',
+    stat: '4 LIVE BUILDS',
     colSpan: 'lg:col-span-6',
   },
 ];
@@ -216,49 +234,5 @@ export const experience: Role[] = [
       'Profiled data with Python and pandas, catching 3,000+ duplicate and null records.',
     ],
     tools: ['Sigma Computing', 'Salesforce (Litify)', 'Power BI', 'SQL', 'Excel', 'Python'],
-  },
-  {
-    id: '02',
-    period: 'JUL 2024 – JAN 2026',
-    title: 'DATA ANALYST',
-    organization: 'SYNCHRONY FINANCIAL',
-    location: 'Remote',
-    summary: 'Portfolio performance reporting for cross-functional stakeholders in consumer finance.',
-    highlights: [
-      'Designed and maintained 10+ Power BI portfolio dashboards on SQL data models.',
-      'Improved data refresh efficiency by 20% with Power Query and DAX transformations.',
-      'Automated data-quality checks in Python, cutting manual validation time by 35%.',
-      'Documentation and metadata work cut support queries by 30%.',
-    ],
-    tools: ['Power BI', 'DAX', 'Power Query', 'SQL', 'Python', 'Excel', 'Jira', 'Git'],
-  },
-  {
-    id: '03',
-    period: 'JUL 2021 – JUL 2023',
-    title: 'DATA ANALYST',
-    organization: 'CITICORP CREDIT SERVICES',
-    location: 'Remote',
-    summary: 'Warehousing, BI and forecasting on a high-volume transactional credit platform.',
-    highlights: [
-      'Improved query performance by 35% on SQL Server and Azure Synapse.',
-      'Accelerated data refresh cycles 40% by managing Azure Data Factory and Databricks pipelines.',
-      'Delivered 25% faster insight generation with DAX-driven Power BI models.',
-      'Forecast payment behavior with scikit-learn regression, and cut release errors by 30% with CI/CD.',
-    ],
-    tools: ['SQL Server', 'Azure Synapse', 'Azure Data Factory', 'Databricks', 'Power BI', 'Tableau', 'Python', 'Jenkins'],
-  },
-  {
-    id: '04',
-    period: 'JUL 2020 – JUN 2021',
-    title: 'DATA ANALYST',
-    organization: 'MARRIOTT INTERNATIONAL',
-    location: 'Telangana, India',
-    summary: 'Hotel operations and revenue reporting for regional leadership.',
-    highlights: [
-      'Built Power BI occupancy dashboards across 50+ properties.',
-      'Automated Excel reconciliations, reducing manual errors by 30% and speeding up month-end close.',
-      'Created Tableau drill-downs for revenue and cancellation trends.',
-    ],
-    tools: ['SQL', 'Power Query', 'Power BI', 'Tableau', 'Excel'],
   },
 ];

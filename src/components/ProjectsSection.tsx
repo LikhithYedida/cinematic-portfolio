@@ -56,7 +56,7 @@ export const ProjectsSection: React.FC = () => {
             className="text-xs sm:text-sm font-light text-[#A8988B] max-w-sm mt-4 md:mt-0 leading-relaxed"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            Five end-to-end builds, each tied to a domain I've worked in: finance, legal, healthcare and public data. Real data, real numbers, deployed and on GitHub.
+            Six end-to-end builds across legal operations, banking, vehicle safety, emergency response, healthcare and labor data. Four are live; open the dashboards or read the code.
           </p>
         </motion.div>
 
