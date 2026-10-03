@@ -230,9 +230,9 @@ export const experience: Role[] = [
       'Case analytics for a personal injury firm handling auto accident, slip-and-fall and workers’ compensation matters.',
     highlights: [
       'Wrote SQL for 15+ key case-management reports in Sigma Computing, with validation built in.',
-      'Built 22 Power BI dashboards with data-quality checks and automated refreshes for leadership.',
+      'Built 22 leadership dashboards in Sigma Computing and Salesforce (Litify) with data-quality checks and automated refreshes.',
       'Profiled data with Python and pandas, catching 3,000+ duplicate and null records.',
     ],
-    tools: ['Sigma Computing', 'Salesforce (Litify)', 'Power BI', 'SQL', 'Excel', 'Python'],
+    tools: ['Sigma Computing', 'Salesforce (Litify)', 'SQL', 'Python', 'pandas', 'Excel'],
   },
 ];
