@@ -18,7 +18,7 @@ export const profile = {
 export const heroCopy = {
   headline: ['I TURN DATA', 'INTO', 'DECISIONS'],
   intro:
-    'Data analyst building the SQL, pipelines and dashboards leadership trusts, from case analytics at a personal injury firm to six end-to-end builds on real-world data.',
+    'Data analyst with 5+ years building the SQL, pipelines and dashboards leadership trusts, across consumer finance at Citi and Synchrony, case analytics at a personal injury firm, and six end-to-end builds on real-world data.',
   introLine2: 'SQL, Python and BI, built for the people who make the call.',
 };
 
@@ -35,7 +35,7 @@ export const heroKpis = [
 export const about = {
   headline: ["I DON'T JUST BUILD DASHBOARDS.", 'I BUILD TRUST IN THE NUMBERS.'],
   bio:
-    "a data analyst who builds the SQL, pipelines and dashboards that leadership relies on. Most recently I ran case analytics at a personal injury law firm, and I've shipped six end-to-end analytics projects across legal, healthcare, banking, vehicle safety, emergency response and labor data. I obsess over data quality so the numbers hold up in the room.",
+    "a data analyst with 5+ years across financial, legal and hospitality data, from portfolio reporting at Citi and Synchrony to case analytics at a personal injury law firm. I build the SQL, pipelines and dashboards that leadership relies on, and I've shipped six end-to-end analytics projects across legal, healthcare, banking, vehicle safety, emergency response and labor data. I obsess over data quality so the numbers hold up in the room.",
   stats: [
     { value: '22', label: 'Dashboards Shipped', gold: false },
     { value: '15+', label: 'Case Reports Built', gold: true },
@@ -234,5 +234,49 @@ export const experience: Role[] = [
       'Profiled data with Python and pandas, catching 3,000+ duplicate and null records.',
     ],
     tools: ['Sigma Computing', 'Salesforce (Litify)', 'SQL', 'Python', 'pandas', 'Excel'],
+  },
+  {
+    id: '02',
+    period: 'JUL 2024 – JAN 2026',
+    title: 'DATA ANALYST',
+    organization: 'SYNCHRONY FINANCIAL',
+    location: 'Remote',
+    summary: 'Portfolio performance reporting for cross-functional stakeholders in consumer finance.',
+    highlights: [
+      'Designed and maintained 10+ Power BI portfolio dashboards on SQL data models.',
+      'Improved data refresh efficiency by 20% with Power Query and DAX transformations.',
+      'Automated data-quality checks in Python, cutting manual validation time by 35%.',
+      'Documentation and metadata work cut support queries by 30%.',
+    ],
+    tools: ['Power BI', 'DAX', 'Power Query', 'SQL', 'Python', 'Excel', 'Jira', 'Git'],
+  },
+  {
+    id: '03',
+    period: 'JUL 2021 – JUL 2023',
+    title: 'DATA ANALYST',
+    organization: 'CITICORP CREDIT SERVICES',
+    location: 'Remote',
+    summary: 'Warehousing, BI and forecasting on a high-volume transactional credit platform.',
+    highlights: [
+      'Improved query performance by 35% on SQL Server and Azure Synapse.',
+      'Sped up data refresh cycles by 40% by managing Azure Data Factory and Databricks pipelines.',
+      'Delivered 25% faster insight generation with DAX-driven Power BI models.',
+      'Forecast payment behavior with scikit-learn regression, and cut release errors by 30% with CI/CD.',
+    ],
+    tools: ['SQL Server', 'Azure Synapse', 'Azure Data Factory', 'Databricks', 'Power BI', 'Tableau', 'Python', 'Jenkins'],
+  },
+  {
+    id: '04',
+    period: 'JUL 2020 – JUN 2021',
+    title: 'DATA ANALYST',
+    organization: 'MARRIOTT INTERNATIONAL',
+    location: 'Telangana, India',
+    summary: 'Hotel operations and revenue reporting for regional leadership.',
+    highlights: [
+      'Built Power BI occupancy dashboards across 50+ properties.',
+      'Automated Excel reconciliations, reducing manual errors by 30% and speeding up month-end close.',
+      'Created Tableau drill-downs for revenue and cancellation trends.',
+    ],
+    tools: ['SQL', 'Power Query', 'Power BI', 'Tableau', 'Excel'],
   },
 ];
