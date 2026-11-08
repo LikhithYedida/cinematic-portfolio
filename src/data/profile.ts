@@ -238,7 +238,7 @@ export const experience: Role[] = [
   {
     id: '02',
     period: 'JUL 2024 – JAN 2026',
-    title: 'DATA ANALYST',
+    title: 'FINANCIAL DATA ANALYST',
     organization: 'SYNCHRONY FINANCIAL',
     location: 'Remote',
     summary: 'Portfolio performance reporting for cross-functional stakeholders in consumer finance.',
@@ -253,7 +253,7 @@ export const experience: Role[] = [
   {
     id: '03',
     period: 'JUL 2021 – JUL 2023',
-    title: 'DATA ANALYST',
+    title: 'SENIOR DATA ANALYST',
     organization: 'CITICORP CREDIT SERVICES',
     location: 'Remote',
     summary: 'Warehousing, BI and forecasting on a high-volume transactional credit platform.',
