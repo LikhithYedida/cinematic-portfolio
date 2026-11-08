@@ -12,7 +12,7 @@ export const profile = {
   email: 'yedidalikhith@gmail.com',
   linkedin: 'https://www.linkedin.com/in/likhithyedida/',
   github: 'https://github.com/LikhithYedida',
-  resume: 'Likhith_Yedida_Resume.pdf',
+  resume: 'Likhith_Y_Resume.pdf',
 };
 
 export const heroCopy = {
